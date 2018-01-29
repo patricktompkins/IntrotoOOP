@@ -8,30 +8,30 @@ namespace IntrotoOOP
 {
     class Cat
     {
-        //I need STATES
-
-            //fields
+        //STATES
+          //fields
         private string name;
         private int age;
         private string furColor;
         private bool isHungry = true;
 
+
+
+        //Properties
         public string Name
         {
             get { return this.name;}
             set { this.name = value; }
-        
-
         }
-    
-        //I need BEHAVIORS
 
-            //Constructors
+
+    
+        // BEHAVIORS
+        //Constructors
         public Cat()
         {
             //default constructor 
             //- doesnt take parameters ( nothing in the paraentheses)
-
         }
 
         public Cat(string name, int age, string furColor)
@@ -42,6 +42,7 @@ namespace IntrotoOOP
 
         }
 
+        //methods
         public void Eat()
         {
             if (isHungry)
@@ -51,7 +52,17 @@ namespace IntrotoOOP
             }
 
             Console.WriteLine("Is the cat hungary? " + isHungry);
-
         }
+
+            public void Meow()
+            {
+                Console.WriteLine("\a");
+            }
+
+           
+
+
+
+        
     }
 }
